@@ -115,6 +115,11 @@ The creator and maintainer of porg is David Ricart <icnelis@*> (where *
 I'd like to thank all the males that have contributed to the development of
 porg. A complete list of them can be found in the AUTHORS file.
 
+* github Repository *
+
+The sourceforge.net Subversion repository was converted to Git and posted to
+Github by Jeremy Brubaker on 17 August 2021. The sourceforge.net repository had
+no commits since August 2017.
 
 ===============================================================================
 
