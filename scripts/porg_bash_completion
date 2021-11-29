@@ -39,8 +39,9 @@
 #
 #-------------------------------------------------------------------------------
 
+have=$(type -p porg)
 
-have porg &&
+[ "$have" ] &&
 _porg()
 {
 	local prev cur pkgs longopts longopts_eq shortopts sorts vars vars_complete var
@@ -260,3 +261,4 @@ _porg()
 }
 [ "$have" ] && complete -F _porg porg
 
+unset have
