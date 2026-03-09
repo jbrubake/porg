@@ -124,8 +124,8 @@ if test "$GXX" = yes; then
 fi
 
 if echo "$PACKAGE_VERSION" | grep -q svn; then
-	MY_CFLAGS="$MY_CFLAGS -Werror"
-	MY_CXXFLAGS="$MY_CXXFLAGS -Werror"
+	MY_CFLAGS="$MY_CFLAGS -Werror -Wno-error=overloaded-virtual"
+	MY_CXXFLAGS="$MY_CXXFLAGS -Werror -Wno-error=overloaded-virtual"
 fi
 
 AC_SUBST([MY_CXXFLAGS])
