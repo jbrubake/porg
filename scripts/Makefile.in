@@ -301,7 +301,7 @@ bin_SCRIPTS = \
 	porgball
 
 logme_files = \
-	$(DESTDIR)$(sysconfdir)/bash_completion.d/porg_bash_completion \
+	$(DESTDIR)$(datadir)/bash-completions/completions/porg \
 	$(DESTDIR)$(bindir)/paco2porg \
 	$(DESTDIR)$(bindir)/porgball
 
@@ -545,8 +545,8 @@ uninstall-am: uninstall-binSCRIPTS
 	logme
 
 install-exec-local:
-		$(mkinstalldirs) $(DESTDIR)$(sysconfdir)/bash_completion.d && \
-		$(INSTALL_DATA) porg_bash_completion $(DESTDIR)$(sysconfdir)/bash_completion.d
+		$(mkinstalldirs) $(DESTDIR)$(datadir)/bash-completions/completions && \
+		$(INSTALL_DATA) porg_bash_completion $(DESTDIR)$(datadir)/bash-completions/completions/porg
 
 logme:
 	ls $(logme_files) | porg -lp+ porg-$(PACKAGE_VERSION)
