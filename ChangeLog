@@ -1,11 +1,29 @@
-SVN
----
+Version 0.11 (12 March 2026)
+----------------------------
+
+	General changes:
 
 	+ Added flag '-Wno-nonnull-compare' to compiler, to avoid
 	  unnecessary warnings (thanks Bat Guano).
+	+ Added flag '-Wno-error=overloaded' to compiler to avoid
+	  failing because GCC is quite aggressive with this one.
+	+ Replaced strcpy(3) with memcpy(3) to avoid
+	  'stringopg-truncation-warning'
+	+ Removed requirement to run `autoreconf` as part of normal
+	  builds
+	+ Move webpage to a 'github-pages' branch for hosting in GitHub
+	  Pages and update package URL to point to GitHub Pages instance
 
-	+ porg: Function get_digits(): Return 1 when input number is 0.
+	Changes in porg:
 
+	+ Function get_digits(): Return 1 when input number is 0.
+	+ Install bash completion script to the proper directories.
+
+
+17 August 2021
+--------------
+
+	+ Forked and converted from SVN to git
 
 Version 0.10 (17 May 2016)
 --------------------------
