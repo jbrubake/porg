@@ -40,9 +40,6 @@ logme-really:
 	done && \
 	echo && porg -vvxfsty porg-$(PACKAGE_VERSION)
 
-README: doc/index.html
-	html2text $< | $(SED) 's/&ast;/*/g' > README
-
 ## Download SVN snapshot (Read / Write)
 svn-checkout:
 	svn checkout --username=davidrr $(svnurl) porg-code

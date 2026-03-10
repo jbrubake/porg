@@ -3,7 +3,7 @@
 //-----------------------------------------------------------------------
 // This file is part of the package porg
 // Copyright (C) 2015 David Ricart
-// For more information visit http://porg.sourceforge.net
+// For more information visit https://jbrubake.github.io/porg
 //=======================================================================
 
 #ifndef PORG_PKG_H
