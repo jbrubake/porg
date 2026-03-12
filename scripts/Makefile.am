@@ -9,11 +9,11 @@ bin_SCRIPTS = \
 	porgball
 
 install-exec-local:
-		$(mkinstalldirs) $(DESTDIR)$(sysconfdir)/bash_completion.d && \
-		$(INSTALL_DATA) porg_bash_completion $(DESTDIR)$(sysconfdir)/bash_completion.d
+		$(mkinstalldirs) $(DESTDIR)$(datadir)/bash-completion/completions && \
+		$(INSTALL_DATA) porg_bash_completion $(DESTDIR)$(datadir)/bash-completion/completions/porg
 
 logme_files = \
-	$(DESTDIR)$(sysconfdir)/bash_completion.d/porg_bash_completion \
+	$(DESTDIR)$(datadir)/bash-completion/completions/porg \
 	$(DESTDIR)$(bindir)/paco2porg \
 	$(DESTDIR)$(bindir)/porgball
 
